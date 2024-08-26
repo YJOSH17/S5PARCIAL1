@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>IMG HTML</title>
+    <link rel="stylesheet" href="MENU.css">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <span style="font-size:30px;cursor:pointer" class="menu" onclick="openNav()">&#9776; MENU</span>        
+          </a>
+          <center><H1 class="text-white mx-auto">SABANA HTML 5</H1></center>
+  
+          <!--<div></div>  Este div vacío ayuda a centrar el contenido -->
+          <div><center><H1 class="text-white mx-auto">GRUPO:505</H1></center></div>
+        
+        </div>
+
+     
+    </nav>
+
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <strong><a href="MENU.html">PRINCIPAL</a></strong>
+        <a href="antecedentes.html">Antecedentes</a>
+        <a href="etiqueta.html">Etiqueta-Sintaxis</a>
+        <a href="texto.html">Texto</a>
+        <a href="Lsitas.html">Listas</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Imagenes.html">Imagen</a>
+        <a href="video.html">Video</a>
+        <a href="audio.html">Audio</a>
+        <a href="hipervinculos.html">Hipervinculos</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="semanticos.html">Semanticos</a>
+        <a href="frames.html">Frames</a>
+        <a href="estructuraB.html">Estructura Basica</a>
+        <a href="meta.html">Meta</a>
+        <a href="extras.html">Extras/Otras</a>
+
+    </div>
+
+    <center>
+    <div class="main">
+        <strong><h1>IMAGENES EN HTML</h1></strong><br>
+        Poner imágenes en nuestra web produce unos resultados asombrosos de una manera muy fácil. Vamos a mostrarte como puedes incluir una imagen y los atributos que puedes darle a la misma.
+<br>
+El tag básico para colocar una imagen es “img“. Este tag, a diferencia de la gran mayoría de los tags de html, no necesita un cierre. Va acompañado de diferentes atributos que te vamos a explicar a continuación.
+<br>
+El atributo “src” es imprescindible para poder colocar una imagen. Este atributo es el que indica dónde se encuentra alojada la imagen que queremos mostrar. Se escribe así: &lt;img src=”x”&gt;, siendo “x” la dirección o la url dónde se encuentra situada la foto.
+<br>
+La foto podemos alinearla en la página como queramos mediante “align“, utilizando los atributos “left” para alinearla a la izquierda, “right” para alinearla a la derecha, “top” para alinearla arriba, “bottom” para alinearla abajo y “middle” para alinearla al centro.
+<br>
+También podemos poner una descripción de la imagen dentro de la misma para que la gente puede leerla al mantener el ratón encima de ella. Esta descripción podemos escribirla mediante el atributo “alt” y lo escribiríamos de la siguiente manera: alt= “x”, siendo “x” la descripción que le gente leerá al pasar el ratón por encima.
+<br>
+Debemos aclarar que no con todos los navegadores podemos ver el “alt” de manera visual. Hay algunos que no lo representan.
+<br>
+Atributos opcionales pero muy recomendables, son el height y el width. El height marca la altura de la imagen, mientras que el width marca la anchura. Son recomendables porque así ayudaremos al navegador a representar la imagen.
+<br>
+Y por último, también queremos mostrarte que le puedes adjudicar un borde a la fotografía. El atributo ya te lo sabes: “border“. Después solo tendrás que definir cuál quieres que sea el grosor del borde.
+<br>
+Así las cosas, deberemos escribir este código…
+<br></center> 
+<pre class="example preExample">
+    &lt;img src="html/imagenes/prueba.jpg" border="1" alt="Este es el ejemplo de un texto alternativo" width="300" height="300"&gt;</pre>
+<br>
+<center>
+…para poder ver esta preciosa fotografía
+<br>
+<img id="img2" src="IMG/LOGO CECYTEM.png" alt="Este es el ejemplo de un texto alternativo" width="300" height="300" border="1" data-lazy-src="IMG/LOGO CECYTEM.png" data-ll-status="loaded" class="entered lazyloaded">
+<br><strong><h2>Cómo hacer una imagen HTML responsive</h2></strong><br>
+En la creciente tendencia a la maquetación mobile first, debemos considerar la anchura máxima que una imagen debe tener para poder ser visualizada de forma correcta en diferentes tamaños de pantalla y diferentes dispositivos. Para ello podremos hacer uso de distintas reglas CSS, aplicadas tanto en las hojas de estilo como en el propio documento HTML.
+<br>
+Para hacer una imagen responsive adaptada al tamaño de su contenedor, tan solo tienes que añadir el siguiente atributo a la etiqueta img: style=”max-width:100%;width:auto;height:auto;”. Con esto conseguirás que la imagen se adapte a los diferentes cambios en el tamaño de pantalla.
+<br>
+Un caso típico es, como dicen en este artículo sobre cómo hacer un logo profesional gratis, la inserción de un logotipo que responda, usando una misma imagen, a diferentes tamaños de pantalla.
+<br>
+Ejemplo:
+<br>
+Escribiendo este código:
+</center>
+<pre class="example preExample">
+    &lt;img src="html/imagenes/prueba.jpg" style="max-width:100%;width:auto;height:auto;"&gt;</pre>
+   <br><br><center>Conseguiremos esta imagen responsive: <br>
+    <div align="center">
+        <img width="300" height="300" style="max-width: 100%; width: auto; height: auto;" src="IMG/LOGO CECYTEM.png" data-lazy-src="IMG/LOGO CECYTEM.png" data-ll-status="loaded" class="entered lazyloaded">
+        <noscript><img width="300" height="300" style="max-width: 100%; width: auto; height: auto;" src="IMG/LOGO CECYTEM.png" /></noscript></div>
+</center> <br><br>
+
+
+
+<br><br><p class="text-center">Esta Pagina fue diseñada por Axel Lozano Guarneros & Joshua Yeray Bailon Gracia</p>
+    </div>
+   
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.querySelector(".main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

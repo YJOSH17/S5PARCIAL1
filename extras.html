@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Extras y Otras Etiquetas en HTML</title>
+    <link rel="stylesheet" href="MENU.css">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <span style="font-size:30px;cursor:pointer" class="menu" onclick="openNav()">&#9776; MENU</span>        
+          </a>
+          <center><H1 class="text-white mx-auto">SABANA HTML 5</H1></center>
+  
+          <!--<div></div>  Este div vacío ayuda a centrar el contenido -->
+          <div><center><H1 class="text-white mx-auto">GRUPO:505</H1></center></div>
+        
+        </div>
+
+     
+    </nav>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <strong><a href="MENU.html">PRINCIPAL</a></strong>
+        <a href="antecedentes.html">Antecedentes</a>
+        <a href="etiqueta.html">Etiqueta-Sintaxis</a>
+        <a href="texto.html">Texto</a>
+        <a href="Lsitas.html">Listas</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Imagenes.html">Imagen</a>
+        <a href="video.html">Video</a>
+        <a href="audio.html">Audio</a>
+        <a href="hipervinculos.html">Hipervinculos</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="semanticos.html">Semanticos</a>
+        <a href="frames.html">Frames</a>
+        <a href="estructuraB.html">Estructura Basica</a>
+        <a href="meta.html">Meta</a>
+        <a href="extras.html">Extras/Otras</a>
+
+    </div>
+
+    <div class="main">
+        <center>
+            <h2>ETIQUETAS EXTRAS Y OTRAS EN HTML</h2>
+            <p>En HTML, existen varias etiquetas que son útiles para agregar estilos, scripts, y otros elementos adicionales a tu página web. Aquí te explicamos algunas de las más comunes:</p>
+        </center>
+        
+        <div class="container">
+            <h3>1. La Etiqueta <code>&lt;style&gt;</code></h3>
+            <p>La etiqueta <code>&lt;style&gt;</code> se utiliza para agregar estilos CSS directamente dentro de un documento HTML:</p>
+            <pre><code>&lt;style&gt;
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        color: navy;
+        font-family: Arial, sans-serif;
+    }
+&lt;/style&gt;</code></pre>
+            <p>Campo: Define estilos CSS dentro del HTML para personalizar la apariencia de los elementos en la página.</p>
+
+            <h3>2. La Etiqueta <code>&lt;script&gt;</code></h3>
+            <p>La etiqueta <code>&lt;script&gt;</code> se usa para incluir código JavaScript en una página web, permitiendo agregar interactividad:</p>
+            <pre><code>&lt;script&gt;
+    function mostrarMensaje() {
+        alert("¡Hola, bienvenido a mi página!");
+    }
+&lt;/script&gt;</code></pre>
+            <p>Campo: Incluye código JavaScript para realizar acciones dinámicas como mostrar un mensaje de alerta.</p>
+
+            <h3>3. La Etiqueta <code>&lt;link&gt;</code></h3>
+            <p>La etiqueta <code>&lt;link&gt;</code> se utiliza para vincular archivos externos, como hojas de estilo CSS:</p>
+            <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+            <p>Campo: Conecta un archivo CSS externo con la página HTML para aplicar estilos.</p>
+
+            <h3>4. La Etiqueta <code>&lt;meta&gt;</code></h3>
+            <p>Ya hemos hablado de la etiqueta <code>&lt;meta&gt;</code>, pero es importante recordar que se usa para especificar metadatos sobre la página, como la codificación de caracteres o la descripción:</p>
+            <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+            <p>Campo: Define la codificación de caracteres del documento como UTF-8.</p>
+
+            <h3>5. La Etiqueta <code>&lt;base&gt;</code></h3>
+            <p>La etiqueta <code>&lt;base&gt;</code> se utiliza para definir una URL base para todos los enlaces relativos en la página:</p>
+            <pre><code>&lt;base href="https://www.ejemplo.com/"&gt;</code></pre>
+            <p>Campo: Establece la URL base para todos los enlaces de la página.</p>
+        </div>
+        <br><br><p class="text-center">Esta Pagina fue diseñada por Axel Lozano Guarneros & Joshua Yeray Bailon Gracia</p>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.querySelector(".main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

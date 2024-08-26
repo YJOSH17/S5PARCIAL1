@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>MP4 HTML</title>
+    <link rel="stylesheet" href="MENU.css">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <span style="font-size:30px;cursor:pointer" class="menu" onclick="openNav()">&#9776; MENU</span>        
+          </a>
+          <center><H1 class="text-white mx-auto">SABANA HTML 5</H1></center>
+  
+          <!--<div></div>  Este div vacío ayuda a centrar el contenido -->
+          <div><center><H1 class="text-white mx-auto">GRUPO:505</H1></center></div>
+        
+        </div>
+
+     
+    </nav>
+
+    <div class="sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <strong><a href="MENU.html">PRINCIPAL</a></strong>
+      <a href="antecedentes.html">Antecedentes</a>
+      <a href="etiqueta.html">Etiqueta-Sintaxis</a>
+      <a href="texto.html">Texto</a>
+      <a href="Lsitas.html">Listas</a>
+      <a href="Tablas.html">Tablas</a>
+      <a href="Imagenes.html">Imagen</a>
+      <a href="video.html">Video</a>
+      <a href="audio.html">Audio</a>
+      <a href="hipervinculos.html">Hipervinculos</a>
+      <a href="Formularios.html">Formularios</a>
+      <a href="semanticos.html">Semanticos</a>
+      <a href="frames.html">Frames</a>
+      <a href="estructuraB.html">Estructura Basica</a>
+      <a href="meta.html">Meta</a>
+      <a href="extras.html">Extras/Otras</a>
+
+  </div>
+
+    <center>
+    <div class="main">
+        <strong><h1>VIDEOS EN HTML</h1></strong><br><br>
+<br>
+<video src="IMG/WhatsApp Video 2024-08-25 at 5.39.57 PM.mp4" width="320" height="240" controls autoplay loop>
+Tu navegador no soporta la etiqueta de video.
+</video>
+<br><br>
+        La etiqueta &lt;video&gt; en HTML es utilizada para insertar videos en una página web. Es un elemento de bloque que permite especificar la fuente del video, así como configurar opciones como el tamaño, el formato y la compatibilidad con dispositivos.
+            <br>
+            <strong><h2>Ejemplo de uso</h2></strong><br><br>
+            Aquí tienes un ejemplo de cómo se utiliza:
+        </center>
+  <pre class="wp-block-code" aria-describedby="shcb-language-1" data-shcb-language-name="HTML, XML" data-shcb-language-slug="xml">
+         &lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video.mp4"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"320"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"240"</span> <span class="hljs-attr">controls</span> <span class="hljs-attr">autoplay</span>&gt;</span>
+           </span> </span><span class="shcb-loc"><span>  Tu navegador no soporta la etiqueta de video.
+           </span></span><span class="shcb-loc"><span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+           </span></span></pre><br><br>
+           <center>
+        En este ejemplo se está usando un video llamado “video.mp4” con tamaño de 320×240, con controles y se reproducirá automáticamente. Si el navegador no soporta la etiqueta de video se mostrará el mensaje “Tu navegador no soporta la etiqueta de video.”
+<br>
+<strong><h2>Atributos</h2></strong><br>
+Los atributos comunes de la etiqueta &lt;video&gt; en HTML son: <br><br>
+<div class="codexa">
+<ul>
+    <li type="circle"><strong> src: </strong> especifica la ruta de la fuente del video</li>
+    <li type="circle"><strong> width y height: </strong> especifica el tamaño del video</li>
+    <li type="circle"><strong> controls: </strong> define si se deben mostrar los controles del video</li>
+    <li type="circle"><strong> autoplay: </strong> define si el video debe reproducirse automáticamente</li>
+    <li type="circle"><strong> loop: </strong> define si el video debe reproducirse en bucle</li>
+    <li type="circle"><strong> muted: </strong> define si el video debe iniciar sin sonido</li>
+    <li type="circle"><strong> poster: </strong> especifica una imagen que se mostrará antes de reproducir el video</li>
+    <li type="circle"><strong> preload: </strong> especifica cómo se deben cargar los datos del video</li>
+    <li type="circle"><strong> playsinline: </strong> define si el video se reproducirá dentro del contenido o en una ventana emergente</li>
+    <li type="circle"><strong> type: </strong> especifica el tipo de formato del video</li>
+
+</ul>
+</div>
+<br>
+Sin embargo, es importante mencionar que algunos de estos atributos pueden no ser soportados por todos los navegadores y algunos pueden ser obsoletos.
+<br>   
+<strong><h2>Más ejemplos</h2></strong><br>
+Aquí tienes algunos ejemplos de cómo utilizar los atributos de la etiqueta &lt;video&gt; en HTML:
+
+Insertar un video con controles y reproducción automática:
+</center>
+<pre><code>
+        &lt;video src="video.mp4" width="320" height="240" controls autoplay&gt;
+            Tu navegador no soporta la etiqueta de video.
+        &lt;/video&gt;
+</code></pre>    
+<br>
+<center>
+En este ejemplo se está utilizando un video llamado “video.mp4” con tamaño de 320×240, con controles y se reproducirá automáticamente. Si el navegador no soporta la etiqueta de video se mostrará el mensaje “Tu navegador no soporta la etiqueta de video.”
+  <br>
+  Insertar un video con reproducción en bucle: <br>
+</center>
+  <pre><code>
+          &lt;video src="video.mp4" width="320" height="240" loop&gt;
+            Tu navegador no soporta la etiqueta de video.
+            &lt;/video&gt;
+</code></pre> 
+<br>
+<center>
+    En este ejemplo se está usando un video llamado “video.mp4” con tamaño de 320×240 y se reproducirá en bucle. Si el navegador no soporta la etiqueta de video se mostrará el mensaje “Tu navegador no soporta la etiqueta de video.”
+  <br>
+  Insertar un video con una imagen previa: <br>
+</center>
+  <pre><code>
+        &lt;video src="video.mp4" width="320" height="240" controls poster="poster.jpg"&gt;
+        Tu navegador no soporta la etiqueta de video.
+        &lt;/video&gt;
+</code></pre> 
+ <br>
+ <center>
+  En este ejemplo se está usando un video llamado “video.mp4” con tamaño de 320×240, con controles y se mostrará una imagen previa llamada “poster.jpg” antes de reproducir el video. Si el navegador no soporta la etiqueta de video se mostrará el mensaje “Tu navegador no soporta la etiqueta de video.”
+  <br>
+  Insertar un video con varios formatos: <br>
+</center>
+  <pre><code>
+          &lt;video width="320" height="240" controls&gt;
+          &lt;source src="video.mp4" type="video/mp4"&gt;
+          &lt;source src="video.webm" type="video/webm"&gt;
+            Tu navegador no soporta la etiqueta de video.
+            &lt;/video&gt;
+</code></pre> 
+ <br>
+ <center>
+  En este ejemplo se está especificando dos fuentes, una en formato MP4 y otra en formato WEBM, el navegador elegirá la fuente que soporte.
+<br>
+</center>
+<br><br><p class="text-center">Esta Pagina fue diseñada por Axel Lozano Guarneros & Joshua Yeray Bailon Gracia</p>
+    </div>
+    
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.querySelector(".main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

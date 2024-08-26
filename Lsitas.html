@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>LISTAS HTML</title>
+    <link rel="stylesheet" href="MENU.css">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <span style="font-size:30px;cursor:pointer" class="menu" onclick="openNav()">&#9776; MENU</span>        
+          </a>
+          <center><H1 class="text-white mx-auto">SABANA HTML 5</H1></center>
+  
+          <!--<div></div>  Este div vacío ayuda a centrar el contenido -->
+          <div><center><H1 class="text-white mx-auto">GRUPO:505</H1></center></div>
+        
+        </div>
+
+     
+    </nav>
+
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <strong><a href="MENU.html">PRINCIPAL</a></strong>
+        <a href="antecedentes.html">Antecedentes</a>
+        <a href="etiqueta.html">Etiqueta-Sintaxis</a>
+        <a href="texto.html">Texto</a>
+        <a href="Lsitas.html">Listas</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Imagenes.html">Imagen</a>
+        <a href="video.html">Video</a>
+        <a href="audio.html">Audio</a>
+        <a href="hipervinculos.html">Hipervinculos</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="semanticos.html">Semanticos</a>
+        <a href="frames.html">Frames</a>
+        <a href="estructuraB.html">Estructura Basica</a>
+        <a href="meta.html">Meta</a>
+        <a href="extras.html">Extras/Otras</a>
+
+    </div>
+
+    <center>
+    <div class="main"><p>
+        <strong><h1>LISTAS HTML</h1></strong><br>
+        <strong><h2>Listas no ordenadas:&lt;ul&gt;</h2></strong><br>
+            Las listas no ordenadas van dentro de la etiqueta &lt;ul&gt; HTML y de su cierre &lt;ul&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta &lt;li&gt; y su cierre.
+            
+            Si no le indicamos nada a la etiqueta &lt;li&gt; HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.
+            
+            Así podemos hacer que la lista esté definida por puntos negros (li type=”disc”), por puntos con el fondo blanco (li type=”circle”) o por cuadrados (li type=”square”). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos.
+            
+            Vamos con un pequeño ejemplo en código:
+        </center>
+
+            <pre class="example preExample">
+                &lt;ul&gt;<br>
+                &lt;li type="circle"&gt;Esto es un tipo de punto.&lt;/li&gt;<br>
+                &lt;li type="square"&gt;Este es otro.&lt;/li&gt;<br>
+                &lt;li type="disc"&gt;Y este es otro diferente.&lt;/li&gt;<br>
+                &lt;/ul&gt;</pre><br>
+
+                <center>Cuyo resultado visual será el que veremos a continuación:
+                <div class="codexa">
+                <code class="example text-center"><ul><br>
+                    <span id=":37h.co" class="tL8wMe EMoHub" dir="ltr"><li style="list-style-type:circle">Esto es un tipo de punto.</li><br>
+                    <span id=":37h.co" class="tL8wMe EMoHub" dir="ltr"><li style="list-style-type:square">Este es otro.</li><br>
+                    <span id=":37h.co" class="tL8wMe EMoHub" dir="ltr"><li style="list-style-type:disc">Y este es otro diferente.</li><br>
+                    </span></span></span></ul></code>
+                </div><br>
+                </center>
+                <center>
+                <strong><h2>Listas ordenadas: &lt;ol&gt;</h2></strong><br>
+                    Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;ol&gt; &lt;/ol&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.
+                    
+                    En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
+                    
+                    Por ejemplo, si queremos que nuestra lista empiece por el número 20, sólo deberemos escribir lo siguiente:
+                </center><br>
+                <pre class="example preExample">
+                        &lt;ol&gt;<br>
+                        &lt;li value="20"&gt;Este será el número 20. &lt;/li&gt;<br>
+                        &lt;li&gt;Este será el 21. &lt;/li&gt;<br>
+                        &lt;li&gt; Este será el 22. Y así sucesivamente. &lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </pre><br>
+                   <center> Y el resultado será el siguiente: 
+                    <div class="codexa">
+                        <code class="example">
+                            <ol><br>
+                            <li value="20">Este será el número 20. </li><br>
+                            <li>Este será el 21. </li><br>
+                            <li> Este será el 22. Y así sucesivamente. </li><br>
+                            </ol>
+                        </code>
+                    </div>
+                   </center> <center><br>
+                   <strong><h2>Listas de definiciones: &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;</h2></strong><br>
+                    Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt;. Vamos a explicarlas por partes:
+                    
+                    La etiqueta &lt;dl&gt; viene de los términos ingleses “Definiton list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.
+                    
+                    La etiqueta &lt;dt&gt; viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de &lt;dt&gt; iría el título de la definición.
+                    
+                    La etiqueta &lt;dd&gt; viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.
+                    
+                    Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.
+                    
+                    Aquí podemos ver un ejemplo de código de dos listado de definición:
+                </center><br>
+        <pre class="example preExample">
+            &lt;dl&gt;<br>
+            &lt;dt&gt;Aquí va el término que definiremos&lt;/dt&gt;<br>
+            &lt;dd&gt;Y aquí dentro irá la definición propiamente dicha.&lt;/dd&gt;<br>
+            &lt;/dl&gt;<br>
+            &lt;dl&gt;<br>
+            &lt;dt&gt;Aquí va la segunda definición&lt;/dt&gt;<br>
+            &lt;dd&gt;Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.&lt;/dd&gt;<br>
+            &lt;/dl&gt;
+        </pre><br>
+       <center> Cuyo resultado será el siguiente:
+        <div class="codexa">
+        <code class="example"><dl><br>
+            <dt>Aquí va el término que definiremos</dt><br>
+            <dd>Y aquí dentro irá la definición propiamente dicha.</dd><br>
+            </dl><br>
+            <dl><br>
+            <dt>Aquí va la segunda definición</dt><br>
+            <dd>Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.</dd><br>
+            </dl>
+        </code>
+    </div>
+    </center>
+
+
+
+    <br><br><p class="text-center">Esta Pagina fue diseñada por Axel Lozano Guarneros & Joshua Yeray Bailon Gracia</p>
+</div>
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.querySelector(".main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

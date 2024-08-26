@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="MENU.css">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <span style="font-size:30px;cursor:pointer" class="menu" onclick="openNav()">&#9776; MENU</span>        
+          </a>
+          <center><H1 class="text-white mx-auto">SABANA HTML 5</H1></center>
+  
+          <!--<div></div>  Este div vacío ayuda a centrar el contenido -->
+          <div><center><H1 class="text-white mx-auto">GRUPO:505</H1></center></div>
+        
+        </div>
+
+     
+    </nav>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <strong><a href="MENU.html">PRINCIPAL</a></strong>
+        <a href="antecedentes.html">Antecedentes</a>
+        <a href="etiqueta.html">Etiqueta-Sintaxis</a>
+        <a href="texto.html">Texto</a>
+        <a href="Lsitas.html">Listas</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Imagenes.html">Imagen</a>
+        <a href="video.html">Video</a>
+        <a href="audio.html">Audio</a>
+        <a href="hipervinculos.html">Hipervinculos</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="semanticos.html">Semanticos</a>
+        <a href="frames.html">Frames</a>
+        <a href="estructuraB.html">Estructura Basica</a>
+        <a href="meta.html">Meta</a>
+        <a href="extras.html">Extras/Otras</a>
+
+    </div>
+
+    <div class="main">
+        <center>
+            <h2>FORMULARIOS EN HTML</h2>
+            <p>Los formularios en HTML son una manera de recopilar datos de los usuarios en una página web. Un formulario puede contener varios tipos de controles, como campos de texto, botones de opción, casillas de verificación, menús desplegables y botones de envío. Los formularios son esenciales para interactuar con los usuarios, permitiendo el envío de datos al servidor para su procesamiento.</p>
+            <p>A continuación, te mostramos algunos ejemplos básicos de cómo se crean diferentes elementos de un formulario en HTML.</p>
+        </center>
+        
+        <div class="container">
+            <h3>Campo de texto</h3>
+            <p>Este es un campo donde el usuario puede escribir información:</p>
+            <p><code>&lt;input type="text" name="nombre" placeholder="Escribe tu nombre"&gt;</code></p>
+            <!-- Campo de texto -->
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+
+            <h3>Botón de opción (radio button)</h3>
+            <p>Permite seleccionar una opción entre varias:</p>
+            <p><code>&lt;input type="radio" name="genero" value="masculino"&gt; Masculino<br&gt;&lt;input type="radio" name="genero" value="femenino"&gt; Femenino</code></p>
+            <!-- Botón de opción -->
+            <input type="radio" name="genero" value="masculino"> Masculino<br>
+            <input type="radio" name="genero" value="femenino"> Femenino
+
+            <h3>Casilla de verificación (checkbox)</h3>
+            <p>Permite seleccionar una o varias opciones:</p>
+            <p><code>&lt;input type="checkbox" name="intereses" value="musica"&gt; Música<br&gt;&lt;input type="checkbox" name="intereses" value="deportes"&gt; Deportes</code></p>
+            <!-- Casilla de verificación -->
+            <input type="checkbox" name="intereses" value="musica"> Música<br>
+            <input type="checkbox" name="intereses" value="deportes"> Deportes
+
+            <h3>Menú desplegable</h3>
+            <p>Permite seleccionar una opción de una lista:</p>
+            <p><code>&lt;select name="pais"&gt;&lt;option value="mexico"&gt;México&lt;/option&gt;&lt;option value="espana"&gt;España&lt;/option&gt;&lt;/select&gt;</code></p>
+            <!-- Menú desplegable -->
+            <select name="pais">
+                <option value="mexico">México</option>
+                <option value="espana">España</option>
+            </select>
+
+            <h3>Botón de envío</h3>
+            <p>Permite enviar el formulario:</p>
+            <p><code>&lt;input type="submit" value="Enviar"&gt;</code></p>
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+        </div>
+        <br><br><p class="text-center">Esta Pagina fue diseñada por Axel Lozano Guarneros & Joshua Yeray Bailon Gracia</p>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.querySelector(".main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
