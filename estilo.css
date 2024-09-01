@@ -1,0 +1,50 @@
+@font-face {
+    font-family: CURSIVA;
+    src: url(FONT/Pacifico-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total del elemento */
+    transition: 1s all ease;
+}
+
+html, body {
+    height: 100%; /* Asegura que html y body ocupen todo el alto de la página */
+    margin: 0;
+}
+
+h1 {
+    font-family: CURSIVA;
+    font-size: 60px;
+    text-shadow: 0 0 10px rgb(0, 217, 255);
+}
+
+body {
+    text-align: center;
+    color: aliceblue;
+    background: rgb(2, 0, 155);
+    background: linear-gradient(0deg, rgba(2, 0, 155, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+a {
+    display: block;
+    color: azure;
+    text-decoration: none;
+    width: 160px;
+    height: 60px;
+    margin: 10px auto;
+    background: navy;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px ridge whitesmoke;
+}
+
+a:hover {
+    box-shadow: 0 0 5px rgb(0, 247, 255);
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    color: rgb(2, 0, 155);
+    transform: scale(1.2);
+}
