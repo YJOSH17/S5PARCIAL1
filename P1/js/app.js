@@ -106,6 +106,9 @@ const guardarGasto = () => {
     gastos.push(gasto);
     localStorage.setItem("gastos", JSON.stringify(gastos));
 
+    document.querySelector("#descripcion").value = "";
+    document.querySelector("#costo").value = "";
+
     mostrarGastos();
     pintarDatos();
 }
