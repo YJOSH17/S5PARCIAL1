@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 1s all ease;
+}
+
+
+.l {
+    display: block;
+    color: azure;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    background: navy;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px ridge whitesmoke;
+    
+   
+}
+
+.l:hover {
+    box-shadow: 0 0 5px rgb(0, 247, 255);
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    color: rgb(2, 0, 155);
+    transform: scale(1.2);
+}
