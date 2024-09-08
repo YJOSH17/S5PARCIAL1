@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+    
+    <title>CONTROL DE CALORIAS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+         <h1 class="m-auto text-neon">CONTROL DE CALORIAS</h1>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row w-75 m-auto">
+            <div class="col p-3 text-center border border-top-0 mt-3 mx-3 shadow h-100 bg-dark" id="ComidaA">
+              
+                <button id="btnAgregar" class="noselect" data-bs-toggle="modal" data-bs-target="#nuevoItem">
+                    <span class="text">AGREGAR</span>
+                    <span class="icon">
+                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"></svg>
+                        <span class="buttonSpan">+</span>
+                    </span>
+                </button>
+
+                <h1 class="bg-neon text-center">COMIDA Y ACTIVIDADES</h1>
+                <div class="col p-3 text-center ">
+                    <div class="list-group mt-3 " id="Actividades"></div>
+                </div>
+            </div>
+
+            <div class="col p-3 border border-top-0 mt-3 shadow h-100 bg-dark w-100" id="resumen">
+                <h1 class="bg-neon text-center">RESUMEN DE CALORIAS</h1>
+
+                <div class="text-center border border-top-0 mt-3 mx-3 shadow h-100 text-neon">
+                    <h1><strong><div id="caloriasConsumidas" >0</div></strong></h1>
+                    <h3 style="color: #ffffff;">CONSUMIDAS</h3><br>
+
+                    <h1><strong><div id="caloriasEjercicio">0</div></strong></h1>
+                    <h3 style="color: #ffffff;">EJERCICIO</h3><br>
+
+                    <h1><strong><div id="caloriasDiferencia">0</div></strong></h1>
+                    <h3 style="color: #ffffff;">DIFERENCIA</h3><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para agregar nueva actividad o comida -->
+    <div class="modal fade" id="nuevoItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" id="MH">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">NUEVO ITEM</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="MB">
+                    <p><label for="Categoria">CATEGORIA</label></p>
+                    <select name="categoria" id="categoria" class="form-control text-center">
+                        <option value="comida">Comida</option>
+                        <option value="ejercicio">Ejercicio</option>
+                    </select>
+                    <br><br>
+                    <p><label for="act">DESCRIPCION:</label></p>
+                    <input type="text" class="form-control text-center" id="act">
+                    <br><br>
+                    <p><label for="cal">CALORIAS:</label></p>
+                    <input type="number" class="form-control text-center" id="cal">
+                    <br><br>
+                </div>
+                <div class="modal-footer" id="MF">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" onclick="guardarAlimento()">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal para editar una actividad o comida -->
+<div class="modal fade" id="editarA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">EDITAR ITEM</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><label for="Categoria">CATEGORIA</label></p>
+                <select name="categoria" id="ecategoria" class="form-control text-center">
+                    <option value="comida">Comida</option>
+                    <option value="ejercicio">Ejercicio</option>
+                </select>
+                <br><br>
+                <p><label for="act">DESCRIPCION:</label></p>
+                <input type="text" class="form-control text-center" id="eact">
+                <br><br>
+                <p><label for="cal">CALORIAS:</label></p>
+                <input type="number" class="form-control text-center" id="ecal">
+                <br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button><br>
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" onclick="editAlimento()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <br><br><br><br><br> <a href="/index.html" class="l"><b>MENU PRINCIPAL</b></a>
+
+    <script src="/P4Calorias/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

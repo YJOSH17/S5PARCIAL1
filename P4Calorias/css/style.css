@@ -1,0 +1,265 @@
+/* Combinación CSS1 y CSS2 */
+
+/* Estilos generales */
+body {
+  background-color: black;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      hsl(118deg 100% 14%) 0%,
+      hsl(116deg 100% 26%) 9%,
+      hsl(114deg 99% 37%) 18%,
+      hsl(112deg 99% 49%) 28%,
+      hsl(108deg 99% 55%) 39%,
+      hsl(104deg 100% 61%) 49%,
+      hsl(100deg 100% 67%) 59%,
+      hsl(107deg 100% 73%) 69%,
+      hsl(114deg 100% 79%) 77%,
+      hsl(121deg 100% 85%) 85%,
+      hsl(111deg 100% 85%) 91%,
+      hsl(102deg 100% 86%) 96%,
+      hsl(92deg 100% 86%) 100% 
+      
+  );
+  margin: 0;
+  padding: 0;
+  height: 200%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.text-neon {
+  color: #39ff14;
+}
+
+.bg-neon {
+  color: #ffb700;
+}
+
+.bg-neon-naranja {
+  background-color: #ffb700;
+  color: black;
+}
+
+.bg-neon-verde {
+  background-color: #39ff14;
+  color: black;
+}
+
+.card {
+  color: black;
+  font-weight: bold;
+}
+
+/* Botones y enlaces */
+a {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+a::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #ff7b00 0%, #ffc400 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+a:hover::before {
+  width: 10em;
+}
+
+.noselect {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: white;
+  background: black;
+  border: 2px solid #ffb700;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.noselect .text {
+  color: white;
+}
+
+.noselect:hover {
+  background-color: #ffb700;
+  color: black;
+}
+
+.buttonSpan {
+  font-size: 2rem;
+  color: #ffb700;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: #39ff14;
+}
+
+/* Estilos específicos del botón "Agregar" */
+#btnAgregar {
+  width: 350px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #00a600;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #00a600;
+  text-align: right;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+button,
+button span {
+  transition: 200ms;
+}
+
+#btnAgregar .text {
+  transform: translateX(110px);
+  color: white;
+  font-weight: bold;
+}
+
+#btnAgregar .icon {
+  position: absolute;
+  border-left: 1px solid #007300;
+  transform: translateX(290px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnAgregar svg {
+  width: 15px;
+  fill: #eee;
+}
+
+#btnAgregar:hover {
+  background: #00a600;
+}
+
+#btnAgregar:active {
+  background: #00cc00;
+}
+
+#btnAgregar:hover .text {
+  color: transparent;
+}
+
+#btnAgregar:hover .icon {
+  width: 330px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+#btnAgregar:focus {
+  outline: none;
+}
+
+#btnAgregar:active .icon svg {
+  transform: scale(0.8);
+}
+
+.buttonSpan {
+  color: white;
+  margin: 150px;
+  font-size: 30px;
+}
+
+/* Contenedores de actividades y resumen */
+#ComidaA {
+  background: white;
+  background: black;
+}
+
+#resumen {
+  background: black;
+  
+}
+/*
+#Actividades {
+ width: 550px;
+}*/
+
+.l {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#catcolor{
+  background-color: black;
+  color: white;
+}
+
+.modal-header{
+  background-color: #ffb700;
+  color: black;
+}
+
+.modal-body{
+background: black;
+color: #39ff14;
+}
+
+.modal-footer{
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+#MH{
+  background-color: #39ff14;
+  color: black;
+}
+
+#MB{
+background: black;
+color: #ffb700;
+}
+
+#MF{
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
