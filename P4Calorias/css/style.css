@@ -1,5 +1,15 @@
 /* Combinación CSS1 y CSS2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total del elemento */
+    transition: 1s all ease;
+}
 
+html, body {
+    height: 100%; /* Asegura que html y body ocupen todo el alto de la página */
+    margin: 0;
+}
 /* Estilos generales */
 body {
   background-color: black;
